@@ -19,6 +19,6 @@
 - Why having only one MySQL server capable of accepting writes is an issue:<br/> Because it acts as single point failure for the web infrastructure.
 
 - Why having servers with all the same components (database, web server and application server) might be a problem:<br/>
-  -They will be a difficult in scaling it up.
-  -Single Point of Failure it there's a problem with one component or server it will affect the entire system.
-  -Resource Imbalance.Example database server may need more disk I/O, memory, and CPU resources compared to a web server. -Having identical servers means resources might be underutilized for some components and overutilized for others.
+  -They will be a difficult in scaling it up.<br/>
+  -Single Point of Failure it there's a problem with one component or server it will affect the entire system.<br/>
+  -Resource Imbalance.Example database server may need more disk I/O, memory, and CPU resources compared to a web server.<br/>-Having identical servers means resources might be underutilized for some components and overutilized for others.
