@@ -1,0 +1,46 @@
+What happens when your type 'google.com' in browser url then click enter.
+
+This action will involve different intergatred technologies.
+
+1. DNS request
+Finding google IP address
+When you type 'google.com' and press Enter, the browser check it DNS cache first. If the IP address is not cached, it sends a DNS query to a DNS server to resolve domain name into an IP address. This process is called DNS record lookup. If the IP address is found it is returned to the browser.
+For 'google.com' the returned IP address is '8.8.8.8' which is the IP address of Google's server.
+The importance of DNS is to translate human-readable domain names into IP addresses.
+
+
+2. TCP/IP
+Establish a connection in a network
+TCP/IP are set of network protocols which facilitate efficient and error free transmission of data in a network. The browser establishes a TCP connection to Google's server using the resolved IP address 
+This process involves three-way handshake for reliable connection.
+
+3. Firewall
+Inspect traffic if it's security policy compliant.
+Firewall is network security device or software that filters incoming and outgoing network traffic based on security policies.
+When you send a send a request to google it first goes through a firewall which acts a safe guard, it checks if your request is safe so as to enable connection. Incase some malicious attacks is detected the request is blocked to keep Google's infrastructure safe. 
+
+4. HTTPS/SSL
+Establish encrption of information.
+HTTPS/SSL gives the user the assurance that the website they will be accessing is secure and private. The browser and google's server initiate an SSL.TLS handshake to establish a secure, encrypted connection.
+This ensure data privacy and integrity during transmission.
+
+5. Load balancer
+Distribute the load.
+A website like google handle many request every minute. To manage all these request in the required time, a load balancer distributes incoming traffic accross multiple servers managed by google to ensure no single server is not overwhelmed and to optimize resource use, hence faster repsonse.
+
+6. Web server
+Handling the HTTPS request.
+When you request reaches a specific Google's web servers, it handle incomming http requests and serves static content (HTML, CSS, JS) to the browser.
+
+7. Application Server
+Handle a business logic for.
+For dynamic content a web server forwards your request to an application server,  where the business logic is processed and sends appropiate feedback to the web server.
+
+
+8. Database
+Retrieve data or store data.
+The application server will send a query to Google's database server to retrieve or update relevant information as needed and sent the results to the application server.
+
+
+
+
