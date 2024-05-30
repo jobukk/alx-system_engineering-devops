@@ -1,0 +1,6 @@
+s script creates an RSA key pair
+if [ ! -d ~/.ssh ]; then
+    mkdir ~/.ssh
+fi
+ssh-keygen -t rsa -f ~/.ssh/school -N ""
+
